@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: dimgrey;
+            margin: 0px;
+            }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.603);
+            padding-left: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.603);
+            padding-top: 5px;
+            margin: 10px;
+            border-radius: 5px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.418);
+            height: 244px;
+            width: 200;
+        }
+        section {
+            margin-left: 10px; 
+            padding-right: 10px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.836);
+            color: white;
+            width: 170px;
+            padding: 4px;
+            text-align: center;
+            border-radius: 10px;
+            margin: auto;
+        }
+
+        footer:hover {
+            padding: 5px;
+            outline: 2px solid gray;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            
+        }
+
+        article > aside {
+            background-color:rgb(175, 175, 175);
+        }
+
+        nav {
+            background-color: rgba(65, 65, 65, 0.363);
+            padding: 3px;            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: lighter;
+            margin-right: 30px;
+        }
+        nav >a:hover {
+            text-decoration: underline;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        h1 {
+            box-shadow: 1px 3px 11px #00000075;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 20%;
+        }
+        h2#lfe{
+            text-align: center;
+            font-size: 22px;
+        }
+        p#a{
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica e tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem obcaecati ex aut! Iste animi ipsa, ratione voluptate eligendi recusandae laudantium vitae totam labore error corporis minus eius, a quo amet?</p>
+                <aside>
+                    <p>Artigo escrito por LFE</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por LFE</p>
+    </footer>
+
+    <div id="bola">
+        <h2 id="lfe">LFE</h2>
+        <p id="a">Sei python, JS, HTML, CSS, Dart</p>
+    </div>
+</body>
+</html>

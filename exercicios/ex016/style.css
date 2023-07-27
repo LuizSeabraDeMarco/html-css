@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #FCDF21,#FCAF14, #CCFC2D);
+    font-family: 'Raleway';
+}
+
+p {
+    text-align: justify;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px #6b330293;
+    width: 600px;
+    padding: 10px;
+    margin:auto;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    text-shadow: 1px 1px 1px #AD08FC;
+}
+h2 {
+    color: #3A88FC;
+}
