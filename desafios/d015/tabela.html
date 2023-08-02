@@ -35,9 +35,6 @@
             color: white;
 
         }
-        tbody tr:nth-child(2n){ 
-            background-color: rgb(255, 252, 97);
-        }
     </style>
 </head>
 <body>
@@ -46,35 +43,50 @@
         <caption>Filmes Preferidos</caption>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <td rowspan="3">Mulher</td>
+                <td rowspan="3" scope="rowgroup">Mulher</td>
                 <td>Ana</td>
                 <td>Interestelar</td>
                 <td>Vingadores</td>
                 <td>Teddy</td>
             </tr>
             <tr>
-                <td rowspan="3">Mulher</td>
-                <td>Ana</td>
-                <td>Interestelar</td>
-                <td>Vingadores</td>
-                <td>Teddy</td>
+                <td>Tania</td>
+                <td>Naruto</td>
+                <td>Vai na fé</td>
+                <td>Meu Malvado favorita</td>
             </tr>
             <tr>
-                <td>Mulher</td>
-                <td>Ana</td>
-                <td>Interestelar</td>
-                <td>Vingadores</td>
-                <td>Teddy</td>
+                <td>Julia</td>
+                <td>Toy Story</td>
+                <td>Além da Vida</td>
+                <td>Lorax</td>
+            </tr>
+            <tr>
+                <td rowspan="2" scope="rowgroup">Homen</td>
+                <td>Luiz</td>
+                <td>Coach Carter</td>
+                <td>Jordan</td>
+                <td>The office</td>
+            </tr>
+            <tr>
+                <td>Vitor</td>
+                <td>Batman</td>
+                <td>Big Hero</td>
+                <td>Hulk</td>
             </tr>
         </tbody>
+        <tfoot>
+            <th colspan="4" scope="row">Total</th>
+            <td>1000</td>
+        </tfoot>
     </table>
 </body>
 </html>
