@@ -2,6 +2,75 @@
 
 /*Todas as mídias*/
 
-@media print{
-    
+@media print { /*IMPRESSORA*/
+    body {
+        background-image: url("../img/back-print.jpg"); /*Desnessesario*/
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+    main {
+        border: 2px solid rgba(0, 0, 0, 0.61);
+        width: 90vw;
+    }
+    main::after{
+        content:"Essa impreção foi feita atravéz do site www.luizlindo.com";
+        font-size: 15px;
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: rgba(0, 0, 0, 0.795);
+    }
+}
+/* Typing Device Breakpoints
+Pequenas telas: até 600px
+Celulares: de 600px até 768px
+Tablet: de 768px até 992
+Desktop: de 992px até 1200px
+TV: de acima de 1200px
+
+*/
+@media screen and (min-width: 768px  ) and (max-width: 1023px) { /*TABLET*/
+    body{
+        background-image: url(../img/back-tablet.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1024px  ) and (max-width: 1680px){ /*DESKTOP*/
+    body{
+        background-image: url(../img/back-pc.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+}
+
+@media screen and (min-width: 1681px) { /*GRANDES TELAS*/
+    body{
+        background-image: url(../img/back-tv.jpg);
+    }
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+    main{
+        width: 700px;
+        font-size: 1.4em;
+        height: 300px;
+    }
 }
