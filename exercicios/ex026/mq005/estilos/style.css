@@ -22,8 +22,6 @@ header > h1 {
 span#burger{
     background-color: rgb(65, 65, 65);
     display: block;
-    width: 90vw;
-    border-radius: 10px;
     margin: auto;
     color: white;
     text-align: center;
@@ -38,6 +36,7 @@ span#burger:hover{
 
 menu{
     display: none;
+    margin: auto;
 }
 
 menu > ul{

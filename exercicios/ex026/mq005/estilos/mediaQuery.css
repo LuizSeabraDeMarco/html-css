@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@media (min-width: 768px) {
+    menu{
+        display: block;
+    }
+    ul{
+        padding-bottom: 10px;
+    }
+    span#burger{
+        display: none;
+    }
+    li{
+        display: inline-block;
+    }
+    main{
+        width: 768px;
+    }
+}
