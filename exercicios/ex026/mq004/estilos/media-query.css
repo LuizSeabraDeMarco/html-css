@@ -35,7 +35,6 @@ Celulares: de 600px até 768px
 Tablet: de 768px até 992
 Desktop: de 992px até 1200px
 TV: de acima de 1200px
-
 */
 @media screen and (min-width: 768px  ) and (max-width: 1023px) { /*TABLET*/
     body{
